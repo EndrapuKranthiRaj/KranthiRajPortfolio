@@ -6,7 +6,8 @@ import axios from 'axios';
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  axios.defaults.withCredentials = true;
+  
   useEffect(() => {
     axios.get("https://portfolio-server-pearl.vercel.app/all_projects")
       .then(response => {
