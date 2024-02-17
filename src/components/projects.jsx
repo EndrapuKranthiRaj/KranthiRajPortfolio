@@ -1,36 +1,39 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BrowserView } from "react-device-detect";
-import axios from  'axios'
+import axios from 'axios';
+
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
-
-export default function projects() {
-  const [data, setData] = useState(null);
+export default function Projects() {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(BASE_URL)
-    .then(result => setData(result.data))
-    .catch(err => console.log(err))
-
+    axios.get(`${BASE_URL}/all_projects`)
+      .then(response => {
+        setProjects(response.data); // Assuming your backend returns an array of projects
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error("Error fetching projects:", error);
+        setLoading(false);
+      });
   }, []);
 
   return (
     <div className="mt-8">
-      {data ? (
+      {loading ? (
+        <p className="m-24 text-3xl text-white">Loading...</p>
+      ) : (
         <div className="flex flex-row justify-between">
-
-          {/* works svg ***************************/}
           <BrowserView className=" hidden md:block">
-          <img className="fixed w-80 mt-4" src="/assets/works.svg" alt="an_svg" />
+            <img className="fixed w-80 mt-4" src="/assets/works.svg" alt="an_svg" />
           </BrowserView>
-
           <div></div>
           <div className="flex flex-col justify-between mt-10">
-
-            { data.map((project) => (
-              <div key={project.id}>
-                {/* Displaying projects start ***************************/}
+            {projects.map((project) => (
+              <div key={project._id}>
                 <Link
                   to={`/projects/${project._id}/view/`}
                   className="flex flex-col pl-2 m-3 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:h-60 md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
@@ -53,13 +56,10 @@ export default function projects() {
                     </p>
                   </div>
                 </Link>
-                {/* Displaying cards end*********************************/}
               </div>
             ))}
           </div>
         </div>
-      ) : (
-        <p className="m-24 text-3xl text-white">Loading...</p>
       )}
     </div>
   );
