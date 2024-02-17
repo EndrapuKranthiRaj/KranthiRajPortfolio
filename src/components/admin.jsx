@@ -2,7 +2,6 @@ import React,{useState} from "react";
 import { DiAptana } from "react-icons/di";
 import axios from "axios";
 import { useNavigate  } from "react-router-dom";
-const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 
 export default function Admin() {
@@ -13,7 +12,7 @@ export default function Admin() {
 
   const Submit = (e) => {
     e.preventDefault();
-    axios.get(`${BASE_URL}/admin/${username+'_'+pass}`)
+    axios.get(`https://portfolio-server-pearl.vercel.app/admin/${username+'_'+pass}`)
     .then(result => {
       if(result.data)
       {
