@@ -1,14 +1,13 @@
 import React,{useEffect , useState} from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios';
-const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export default function specific_project_view() {
     const [project, setProject] = useState(null);
     const {id} = useParams()
 
     useEffect(() => {
-      axios.get(`${BASE_URL}/projects/${id}`)
+      axios.get(`https://portfolio-server-pearl.vercel.app/projects/${id}`)
       .then(result => setProject(result.data))
       .catch(err => console.log(err))
   
