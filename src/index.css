@@ -6,7 +6,7 @@
 body {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%,rgba(87, 49, 14, 0.75) 700%),
     url(""),
-    url("assets/unsplash.jpg") fixed;
+    url("/unsplash.jpg") fixed;
 	background-repeat: repeat, repeat, no-repeat;
 	background-position: center center;
   background-size: 100%, 15%, cover;
@@ -166,6 +166,6 @@ and (min-width: 1030px)
 and (max-width: 1366px)  
 {
   .adminbg{
-  background-image: url("/unsplash_admin_bg.jpg");
+  background-image: url("assets/unsplash_admin_bg.jpg");
 }
 }  
