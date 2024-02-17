@@ -166,6 +166,6 @@ and (min-width: 1030px)
 and (max-width: 1366px)  
 {
   .adminbg{
-  background-image: url("assets/unsplash_admin_bg.jpg");
+  background-image: url("unsplash_admin_bg.jpg");
 }
 }  
