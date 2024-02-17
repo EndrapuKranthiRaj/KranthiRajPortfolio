@@ -8,7 +8,7 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/all_projects")
+    axios.get("https://portfolio-server-pearl.vercel.app/all_projects")
       .then(response => {
         setProjects(response.data); // Assuming your backend returns an array of projects
         setLoading(false);
