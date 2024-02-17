@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "proxy": "https://kranthi-raj-portfolio.onrender.com",
+  "proxy": "https://kranthi-raj-portfolio.vercel.app",
   "type": "module",
   "scripts": {
     "dev": "vite",
