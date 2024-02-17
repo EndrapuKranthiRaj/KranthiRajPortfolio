@@ -3,14 +3,12 @@ import { Link } from "react-router-dom";
 import { BrowserView } from "react-device-detect";
 import axios from 'axios';
 
-const BASE_URL = import.meta.env.VITE_BASE_URL;
-
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/all_projects`)
+    axios.get("http://localhost:3001/all_projects")
       .then(response => {
         setProjects(response.data); // Assuming your backend returns an array of projects
         setLoading(false);
