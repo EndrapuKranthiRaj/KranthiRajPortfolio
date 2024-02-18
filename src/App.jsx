@@ -1,5 +1,4 @@
 import {Routes, Route} from "react-router-dom";
-import { useEffect } from "react";
 import "./App.css";
 import Home from "./components/home";
 import Contact from "./components/contact";
@@ -19,18 +18,6 @@ import Admin_view from "./components/Admin_view";
 
 function App() {
 
-  // to prevent page reload error on vercel start
-
-  useEffect(() => {
-    return () => {
-      const navigationEntries = performance.getEntriesByType("navigation");
-      if (navigationEntries.length && navigationEntries[0].type === "reload") {
-          window.location.href = "/";
-      }
-  };
-  }, []);
-
-  // to prevent page reload error on vercel end
 
   return (
     <>
