@@ -25,7 +25,7 @@ export default function Specific_project_create() {
     console.log("brocode")
   const Submit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3001/projects/newproject",{id,title,Thumbnail_link,description,date})
+    axios.post("https://kranthi-raj-portfolio.vercel.app/projects/newproject",{id,title,Thumbnail_link,description,date})
     .then(result=>{
       console.log(result)
       location.reload()
