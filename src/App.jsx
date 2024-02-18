@@ -38,7 +38,7 @@ function App() {
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/admin" element={<Admin />}></Route>
           <Route exact path="/admin/view" element={<Admin_view />}></Route>
-          <Route exact path="*" element={<Error404 />}></Route>
+          <Route exact path="/*" element={<Home />}></Route>
         </Routes>
       </div>
 
