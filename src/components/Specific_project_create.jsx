@@ -10,7 +10,7 @@ export default function Specific_project_create() {
 
   useEffect(() => {
 
-    if (String(str1).includes(`{process.env.PASS}`)) {
+    if (String(str1).includes(import.meta.env.VITE_PASS)) {
       setDisplayForm(true);
     }
   }, [str1]);
