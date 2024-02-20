@@ -10,7 +10,7 @@ export default function Specific_project_create() {
 
   useEffect(() => {
 
-    if (String(str1).includes("vebroyba")) {
+    if (String(str1).includes(`{process.env.PASS}`)) {
       setDisplayForm(true);
     }
   }, [str1]);
