@@ -22,7 +22,6 @@ export default function Specific_project_create() {
   const [Thumbnail_link,setThumbnail_link] = useState();
   const [description,setDescription] = useState();
   const [date,setDate] = useState();
-    console.log("brocode")
   const Submit = (e) => {
     e.preventDefault();
     axios.post("https://kranthi-raj-portfolio.vercel.app/projects/newproject",{id,title,Thumbnail_link,description,date})
@@ -82,7 +81,7 @@ export default function Specific_project_create() {
           </label>
           <input
             type="text"
-            id="text"
+            id="t1"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             required=""
             onChange={(e)=>setThumbnail_link(e.target.value)}
@@ -99,7 +98,7 @@ export default function Specific_project_create() {
           </label>
           <textarea
             type="text"
-            id="text"
+            id="t2"
             className="resize bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             required=""
             onChange={(e)=>setDescription(e.target.value)}
@@ -115,7 +114,7 @@ export default function Specific_project_create() {
           </label>
           <input
             type="text"
-            id="text"
+            id="t3"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             required=""
             onChange={(e)=>setDate(e.target.value)}
