@@ -22,6 +22,7 @@ export default function Specific_project_create() {
   const [Thumbnail_link,setThumbnail_link] = useState();
   const [description,setDescription] = useState();
   const [date,setDate] = useState();
+  axios.defaults.withCredentials = true;
   const Submit = (e) => {
     e.preventDefault();
     axios.post("https://kranthi-raj-portfolio.vercel.app/projects/newproject",{id,title,Thumbnail_link,description,date})
