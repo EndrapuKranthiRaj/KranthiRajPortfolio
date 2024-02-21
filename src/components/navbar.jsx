@@ -12,12 +12,12 @@ export default function Navbar() {
     <div>
       {/* nav bar start ********************************************/}
 
-    <nav className="z-10 bg-white border-gray-200 dark:bg-gray-900 fixed w-full top-0 start-0">
+    <nav className="z-10 bg-white border-gray-200 bg-gray-900 fixed w-full top-0 start-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* Assuming DiAptana is an icon */}
           <DiAptana color="white" size={25} />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap ">
             Portfolio
           </span>
         </Link>
