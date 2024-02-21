@@ -29,7 +29,7 @@ export default function about() {
     "Passionate Technologist | Innovator & Problem Solver"
     </h4>
     <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-white">
-    Hello, I'm Kranthi Raj Endrapu, a highly motivated technologist based in Hyderabad, Telangana, India. With a Bachelor of Technology degree in Information Technology from Gokaraju Rangaraju Institute of Engineering and Technology, where I maintained an exceptional CGPA of 9.07, I've earned recognition for my academic excellence, securing a full scholarship for four years.
+    Hello, I'm Kranthi Raj Endrapu, a highly motivated technologist based in Hyderabad, Telangana, India. With a Bachelor of Technology degree from Gokaraju Rangaraju Institute of Engineering and Technology, where I maintained an exceptional CGPA of 9.07, I've earned recognition for my academic excellence, securing a full scholarship for four years.
     <br />
     <br />
     My passion lies in leveraging technology to solve real-world problems and drive innovation. I've led numerous projects that showcase my proficiency in coding, design, and problem-solving. Noteworthy among these is the development of a Smart Locker system incorporating fingerprint recognition and automated photo upload capabilities, and a groundbreaking Women and Child Safety Application that ensures security without relying on internet connectivity.
