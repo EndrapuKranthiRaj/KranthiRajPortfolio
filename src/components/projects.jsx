@@ -45,12 +45,12 @@ export default function Projects() {
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                       {project.title}
                     </h5>
-                    <p className="mb-3 font-serif text-gray-400">
+                    <span className="mb-3 font-serif text-gray-400">
                       {project.description.slice(0, 350)}. . .
-                    </p>
-                    <span className="mb-3 font-serif text-blue-400">
-                      read more
                     </span>
+                    <p className="mb-3 font-serif text-blue-400">
+                      read more
+                    </p>
                     <p className="font-normal text-gray-400 mb-3">
                       {" "}
                       Date: {project.date}
