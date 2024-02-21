@@ -9,7 +9,7 @@ export default function Navbar() {
       setIsOpen(!isOpen);
     };
   return (
-    <div>
+    <div className="bg-gray-900">
       {/* nav bar start ********************************************/}
 
     <nav className="z-10 bg-white border-gray-200 bg-gray-900 fixed w-full top-0 start-0">
