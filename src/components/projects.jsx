@@ -34,7 +34,7 @@ export default function Projects() {
               <div key={project._id}>
                 <Link
                   to={`/projects/${project._id}/view/`}
-                  className="flex flex-col pl-2 m-3 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:h-60 md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  className="flex flex-col pl-2 m-3 items-center border  rounded-lg shadow md:flex-row md:h-60 md:max-w-4xl border-gray-700 bg-gray-800 hover:bg-gray-700"
                 >
                   <img
                     className=" object-cover w-full rounded-t-lg h-2/3 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
@@ -42,13 +42,13 @@ export default function Projects() {
                     alt={project.title}
                   />
                   <div className="font-sans flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                       {project.title}
                     </h5>
-                    <p className="mb-3 font-serif text-gray-700 dark:text-gray-400">
+                    <p className="mb-3 font-serif text-gray-400">
                       {project.description.slice(0, 350)}. . .
                     </p>
-                    <p className="font-normal text-gray-700 dark:text-gray-400 mb-3">
+                    <p className="font-normal text-gray-400 mb-3">
                       {" "}
                       Date: {project.date}
                     </p>
