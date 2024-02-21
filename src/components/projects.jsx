@@ -48,6 +48,9 @@ export default function Projects() {
                     <p className="mb-3 font-serif text-gray-400">
                       {project.description.slice(0, 350)}. . .
                     </p>
+                    <p className="mb-3 font-serif text-blue-400">
+                      read more
+                    </p>
                     <p className="font-normal text-gray-400 mb-3">
                       {" "}
                       Date: {project.date}
