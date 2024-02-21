@@ -39,7 +39,7 @@ export default function about() {
     <br />
     In the professional arena, I've contributed as a Full-Stack Developer at Uma's Authentic Kitchen, where my efforts led to a notable 35% increase in user engagement. Currently, I serve as the Technical Head at GRIET's Advanced Academic Center, guiding a team in executing impactful projects and fostering innovation.
     <br />
-    Beyond my technical skills, I actively engage in extracurricular activities such as web development, application development, and marketing, demonstrating my versatility and collaborative spirit.
+    Beyond my technical skills, I actively engage in extracurricular activities such as hackathons, sports, and marketing, demonstrating my versatility and collaborative spirit.
     </p>
       <Link to="/contact" className="inline-block">
       <button
