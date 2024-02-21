@@ -25,7 +25,7 @@ export default function Projects() {
         <p className="m-24 text-3xl text-white ml-[45%] mb-[90%]">Loading...</p>
       ) : (
         <div className="flex flex-row justify-between">
-          <BrowserView className=" hidden md:block mt-1">
+          <BrowserView className=" hidden md:block mt-2">
             <img className="fixed w-80 mt-4" src="/assets/works.svg" alt="an_svg" />
           </BrowserView>
           <div></div>
