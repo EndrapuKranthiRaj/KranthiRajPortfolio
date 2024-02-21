@@ -37,7 +37,7 @@ export default function Projects() {
                   className="flex flex-col pl-2 m-3 items-center border  rounded-lg shadow md:flex-row md:h-60 md:max-w-4xl border-gray-700 bg-gray-800 hover:bg-gray-700"
                 >
                   <img
-                    className=" object-cover w-full rounded-t-lg h-2/3 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    className=" object-cover w-full rounded-t-lg h-2/3 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pt-1"
                     src={project.Thumbnail_link}
                     alt={project.title}
                   />
@@ -45,12 +45,9 @@ export default function Projects() {
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                       {project.title}
                     </h5>
-                    <span className="mb-3 font-serif text-gray-400">
-                      {project.description.slice(0, 350)}. . .
-                    </span>
-                    <span className="mb-3 font-serif text-blue-400">
-                      read more
-                    </span>
+                    <p className="mb-3 font-serif text-gray-400">
+                      {project.description.slice(0, 350)}. . .  <span className="mb-3 font-serif text-blue-400" >read more</span>
+                    </p>
                     <p className="font-normal text-gray-400 mb-3">
                       {" "}
                       Date: {project.date}
