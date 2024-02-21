@@ -44,12 +44,12 @@ export default function Navbar() {
           </svg>
         </button>
         <div className={`md:block w-full  md:w-auto ${isOpen ? 'block' : 'hidden'}`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white bg-gray-800 md:bg-gray-900 border-gray-700">
             <li>
               <Link
                 onClick={toggleMenu}
                 to="/"
-                className={`block py-2 px-3 text-white  ${window.location.pathname=="/" ? 'md:text-blue-500 bg-blue-700':''} rounded md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-whitedark:text-blue-50`}
+                className={`block py-2 px-3  ${window.location.pathname=="/" ? 'md:text-blue-500 bg-blue-700':''} rounded md:bg-transparent md:hover:text-blue-700 md:p-0 text-white text-blue-50`}
                 aria-current="page"
               >
                 Home
@@ -59,7 +59,7 @@ export default function Navbar() {
               <Link
                 onClick={toggleMenu}
                 to="/about"
-                className={`block py-2 px-3 text-white  ${window.location.pathname=="/about" ? 'md:text-blue-500 bg-blue-700':''} rounded md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-whitedark:text-blue-50`}
+                className={`block py-2 px-3  ${window.location.pathname=="/about" ? 'md:text-blue-500 bg-blue-700':''} rounded md:bg-transparent md:hover:text-blue-700 md:p-0 text-white text-blue-50`}
               >
                 About
               </Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
               <Link
                 onClick={toggleMenu}
                 to="/projects"
-                className={`block py-2 px-3 text-white  ${window.location.pathname=="/projects" ? 'md:text-blue-500 bg-blue-700':''} rounded md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-whitedark:text-blue-50`}
+                className={`block py-2 px-3 text-white  ${window.location.pathname=="/projects" ? 'md:text-blue-500 bg-blue-700':''} rounded md:bg-transparent md:hover:text-blue-700 md:p-0 text-white `}
               >
                 Projects
               </Link>
@@ -77,7 +77,7 @@ export default function Navbar() {
               <Link
                 onClick={toggleMenu}
                 to="/contact"
-                className={`block py-2 px-3 text-white  ${window.location.pathname=="/contact" ? 'md:text-blue-500 bg-blue-700':''} rounded md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-whitedark:text-blue-50`}
+                className={`block py-2 px-3  ${window.location.pathname=="/contact" ? 'md:text-blue-500 bg-blue-700':''} rounded md:bg-transparent md:hover:text-blue-700 md:p-0 text-white`}
               >
                 Contact
               </Link>
