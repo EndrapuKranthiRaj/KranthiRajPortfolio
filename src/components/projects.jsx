@@ -50,7 +50,7 @@ export default function Projects() {
                     </span>
                     <span className="mb-3 font-serif text-blue-400">
                       read more
-                    </soan>
+                    </span>
                     <p className="font-normal text-gray-400 mb-3">
                       {" "}
                       Date: {project.date}
