@@ -23,8 +23,6 @@ export default function Projects() {
     <div className="mt-8">
       {loading ? (
         <p className="m-24 text-3xl text-white ml-[45%] mb-[90%]">Loading...</p>
-</div>
-
       ) : (
         <div className="flex flex-row justify-between">
           <BrowserView className=" hidden md:block mt-2">
