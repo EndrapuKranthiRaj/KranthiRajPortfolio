@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <div className="mt-8">
       {loading ? (
-        <div role="status" className="m-24 ml-[45%] mb-[90%]">
+        <div role="status" className="m-24 ml-[48%] mb-[90%]">
           <svg
             aria-hidden="true"
             className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
