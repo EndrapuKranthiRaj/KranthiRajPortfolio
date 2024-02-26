@@ -25,7 +25,7 @@ export default function Specific_project_create() {
   axios.defaults.withCredentials = true;
   const Submit = (e) => {
     e.preventDefault();
-    axios.post("https://kranthi-raj-portfolio.vercel.app/projects/newproject",{id,title,Thumbnail_link,description,date})
+    axios.post("https://portfolio-server-pearl.vercel.app/projects/newproject",{id,title,Thumbnail_link,description,date})
     .then(result=>{
       console.log(result)
       location.reload()
